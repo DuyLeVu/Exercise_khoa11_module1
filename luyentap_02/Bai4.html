@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+    for (i=0; i<7; i++){
+        if (i%6 == 0){
+            for (j=0; j<23; j++){
+                document.write('*');
+            }
+        } else {
+            for (j=0; j<23; j++){
+                if (j%22 == 0) document.write("*")
+                else document.write(' &nbsp');
+            }
+        } document.write('<br>');
+    }
+</script>
+</body>
+</html>

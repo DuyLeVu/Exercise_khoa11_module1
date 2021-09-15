@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<button type="button" onclick="toPlayGame()">Play!</button>
+<script>
+    function toPlayGame() {
+        let num = parseInt(prompt('Nhap vao khoang muon doan (0 - number): '));
+        var soRandom = Math.floor(Math.random() * num);
+        parseInt(soRandom);
+        console.log(soRandom);
+        let soN;
+        do {
+             soN = parseInt(prompt('Nhap vao so ban chon N = '));
+            if (soN > soRandom) {
+                alert('So ban nhap lon hon so can tim');
+            } else if (soN < soRandom) {
+                alert('So ban nhap be hon so can tim');
+            }
+        }while (soN != soRandom)
+        alert("Chuc mung ban da doan dung");
+    }
+</script>
+</body>
+</html>

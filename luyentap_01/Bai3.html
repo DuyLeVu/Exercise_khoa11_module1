@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+    for (i = 0; i < 20; i++) {
+        document.write(isFiboNumber(i) + " ");
+    }
+
+    function isFiboNumber(n) {
+        if (n == 0 || n == 1) return n;
+        else {
+            return isFiboNumber(n - 2) + isFiboNumber(n - 1);
+        }
+    }
+</script>
+
+</body>
+</html>
