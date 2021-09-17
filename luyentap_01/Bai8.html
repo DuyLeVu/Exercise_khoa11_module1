@@ -13,6 +13,7 @@
         parseInt(soRandom);
         console.log(soRandom);
         let soN;
+        let count = 0;
         do {
              soN = parseInt(prompt('Nhap vao so ban chon N = '));
             if (soN > soRandom) {
@@ -20,8 +21,12 @@
             } else if (soN < soRandom) {
                 alert('So ban nhap be hon so can tim');
             }
-        }while (soN != soRandom)
-        alert("Chuc mung ban da doan dung");
+                else{alert("Chuc mung ban da doan dung");
+                    break;}
+            count++;
+        }while (count < 4)
+        if (count ==4) alert('Ban da thua sau 4 lan nhap');
+
     }
 </script>
 </body>
