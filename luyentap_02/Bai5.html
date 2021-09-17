@@ -8,12 +8,12 @@
 <script>
    let soTienBanDau = parseFloat(prompt('Nhap so tien ban dau= '));
    let soLaiSuat = parseFloat(prompt('Nhap so lai suat: '));
-   let soNam = parseInt(prompt('Nhap so nam'));
+   let soThang = parseInt(prompt('Nhap so thang'));
    let soLaiSuatTra = 0;
-   for (i = 1; i<=soNam; i++){
-       soLaiSuatTra = (soTienBanDau * (1+soLaiSuat)** i);
-       document.write('So lai thang ' +i +'=' +soLaiSuatTra.toFixed(2) + '<br>');
+   for (i = 1; i<=soThang; i++){
+       soTienBanDau = soTienBanDau + (soTienBanDau * (soLaiSuat/100));
    }
+   document.write('So lai =' +soTienBanDau.toFixed(2));
 </script>
 </body>
 </html>

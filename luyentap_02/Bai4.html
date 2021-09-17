@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+    let data = "";
     for (i=0; i<7; i++){
         if (i%6 == 0){
             for (j=0; j<23; j++){
@@ -13,8 +14,8 @@
             }
         } else {
             for (j=0; j<23; j++){
-                if (j%22 == 0) document.write("*")
-                else document.write(' &nbsp');
+                 if (j%22 == 0) document.write("*")
+                 else document.write(' &nbsp');
             }
         } document.write('<br>');
     }
